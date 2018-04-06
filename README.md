@@ -1,2 +1,8 @@
-# lagonegro_vallesestaione
-Materiale della 2 media Anna Frank
+![](images/sfondo.jpg)
+<p><strong><span style="color:blue">Il Lago Nero</span> e <span style="color:green">L ’Alta Valle</span> del <span style="color:red">Sestaione</span></strong></p>
+<p>Ci presentiamo: siamo la <strong>2°A</strong> della <em>Scuola Media Anna Frank</em>.</p>
+<p>Abbiamo scelto di costruire uno strumento agile e di facile consultazione che possa essere utile ai turisti interessati a visitare questo magnifico angolo della provincia di Pistoia, ricco di storia, di paesaggi affascinanti, di specie vegetali e animali molto particolari e rare. Si tratta di una delle aree più pregiate dell’Appennino settentrionale che custodisce al suo interno popolamenti vegetali annoverati fra quelli di interesse conservazionistico dalla Direttiva Habitat del 1992.</p>
+<p>Tutto è cominciato con l’incontro con il Dott. Simone Vergari, il quale ci ha introdotto a quella che sarebbe poi risultata un’esperienza unica, la passeggiata fino al Lago Nero. Quello che ci ha detto ci ha incuriosito e motivato quanto bastava perché, arrivati all’Orto Botanico dell’Abetone, non vedessimo l’ora di partire. E le aspettative sono state ampiamente superate da ciò che abbiamo visto, provato e imparato. Tutto il materiale raccolto, soprattutto fotografico, ci è servito, assieme a pubblicazioni particolari, ad allestire poi questo prodotto, su cui abbiamo lavorato a lungo.</p>
+<p>L’area che abbiamo attraversato rientra nel perimetro del SIC (<em>Sito di Importanza Comunitaria</em>, Rete Natura 2000) IT5130001 Alta Valle del Sestaione. Molto vicino al sentiero che abbiamo percorso c’è la Riserva Statale di Campolino.</p>
+<p>Una precisazione sui colori: useremo per i titoli il colore <span style="color:red"><strong>rosso</strong></span> per indicare i paragrafi di interesse storico – letterario, in <span style="color:blue"><strong>azzurro</strong> </span>quelli di interesse geografico – geomorfologico e in <span style="color:green"><strong>verde</strong> </span>quelli di interesse ecologico – biologico.</p>
+
