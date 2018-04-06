@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lago Nero e Alta Valle del Sestaione</title>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="css/leaflet-sidebar.css" />
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
+  <script src="js/leaflet-sidebar.js"></script>
+ <script type="text/javascript" src="js/percorso_sestaione.js"></script>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html, body, #map {
+            height: 100%;
+            font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+        }
+
+        .lorem {
+            font-style: italic;
+            text-align: justify;
+            color: #AAA;
+        }
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 320px;
+    }
+    img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+   }
+   body { font-family: 'PT Sans', sans-serif;
+     }
+  table, th, td {
+     margin-left: auto;
+     margin-right: auto;
+     border: 1px solid black;
+     border-collapse: collapse;
+}
+
+p {  
+     color: black;
+   }
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+    </style>
+</head>
+<body>
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="leaflet-sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
+                <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+                <li><a href="#messages" role="tab"><i class="fa fa-info"></i></a></li>
+                <!--<li><a onclick="alert('Progetto Lago Nero e Alta Valle sestaione')"><i class="fa fa-info"></i></a></li><!>-->
+            </ul>
+          <ul role="tablist">
+                <li><a href="https://github.com/alfcrisci/sestaione_project"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h2 class="leaflet-sidebar-header">
+                    Lago Nero e Alta Valle del Sestaione
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h2>
+
+<p><img src="images/sfondo.jpg" alt="Grande scoperta"></p>
+<h2 id="a-piccoli-passi-verso-una-grande-scoperta"><span style="color:red">A piccoli</span> <span style="color:blue"> passi verso</span> una <span style="color:green">grande scoperta</h2>
+<p><strong><span style="color:blue">Il Lago Nero</span> e <span style="color:green">L ’Alta Valle</span> del <span style="color:red">Sestaione</span></strong></p>
+<p>Ci presentiamo: siamo la <strong>2°A</strong> della <em>Scuola Media Anna Frank</em>.</p>
+<p>Abbiamo scelto di costruire uno strumento agile e di facile consultazione che possa essere utile ai turisti interessati a visitare questo magnifico angolo della provincia di Pistoia, ricco di storia, di paesaggi affascinanti, di specie vegetali e animali molto particolari e rare. Si tratta di una delle aree più pregiate dell’Appennino settentrionale che custodisce al suo interno popolamenti vegetali annoverati fra quelli di interesse conservazionistico dalla Direttiva Habitat del 1992.</p>
+<p>Tutto è cominciato con l’incontro con il Dott. Simone Vergari, il quale ci ha introdotto a quella che sarebbe poi risultata un’esperienza unica, la passeggiata fino al Lago Nero. Quello che ci ha detto ci ha incuriosito e motivato quanto bastava perché, arrivati all’Orto Botanico dell’Abetone, non vedessimo l’ora di partire. E le aspettative sono state ampiamente superate da ciò che abbiamo visto, provato e imparato. Tutto il materiale raccolto, soprattutto fotografico, ci è servito, assieme a pubblicazioni particolari, ad allestire poi questo prodotto, su cui abbiamo lavorato a lungo.</p>
+<p>L’area che abbiamo attraversato rientra nel perimetro del SIC (<em>Sito di Importanza Comunitaria</em>, Rete Natura 2000) IT5130001 Alta Valle del Sestaione. Molto vicino al sentiero che abbiamo percorso c’è la Riserva Statale di Campolino.</p>
+<p>Una precisazione sui colori: useremo per i titoli il colore <span style="color:red"><strong>rosso</strong></span> per indicare i paragrafi di interesse storico – letterario, in <span style="color:blue"><strong>azzurro</strong> </span>quelli di interesse geografico – geomorfologico e in <span style="color:green"><strong>verde</strong> </span>quelli di interesse ecologico – biologico.</p>
+<p>Ecco i links ai principali punti del nostro percorso oppure puoi esplorarli nella mappa direttamente dove facendo un click ti apparirà il link nella finestra:</p>
+
+<div class="btn-group" style="width:100%">
+  <a href="html/1_par.html"><button style="width:20%">Sito 1</button></a>
+  <a href="html/2_par.html"> <button style="width:20%">Sito 2</button></a>
+  <a href="html/3_par.html"><button style="width:20%">Sito 3</button></a>
+  <a href="html/4_par.html"> <button style="width:20%">Sito 4</button></a>
+  <a href="html/5_par.html"> <button style="width:20%">Sito 5</button></a>
+</div>
+<div class="btn-group" style="width:100%">
+  <a href="html/6_par.html"><button style="width:20%">Sito 6</button></a>
+  <a href="html/7_par.html"> <button style="width:20%">Sito 7</button></a>
+  <a href="html/8_par.html"><button style="width:20%">Sito 8</button></a>
+  <a href="html/9_par.html"> <button style="width:20%">Sito 9</button></a>
+  <a href="html/10_par.html"> <button style="width:20%">Sito 10</button></a>
+</div>
+<div class="btn-group" style="width:100%">
+  <a href="html/11_par.html"><button style="width:20%">Sito 11</button></a>
+  <a href="html/12_par.html"> <button style="width:20%">Sito 12</button></a>
+  <a href="html/13_par.html"><button style="width:20%">Sito 13</button></a>
+  <a href="html/14_par.html"> <button style="width:20%">Sito 14</button></a>
+  <a href="html/15_par.html"> <button style="width:20%">Sito 15</button></a>
+</div>
+<div class="btn-group" style="width:100%">
+  <a href="html/16_par.html"><button style="width:20%">Sito 16</button></a>
+  <a href="html/17_par.html"> <button style="width:20%">Sito 17</button></a>
+  <a href="html/18_par.html"><button style="width:20%">Sito 18</button></a>
+  <a href="html/19_par.html"> <button style="width:20%">Sito 19</button></a>
+  <a href="html/20_par.html"> <button style="width:20%">Sito 20</button></a>
+</div>
+<div class="btn-group" style="width:100%">
+  <a href="html/21_par.html"><button style="width:20%">Sito 21</button></a>
+  <a href="html/22_par.html"> <button style="width:20%">Sito 22</button></a>
+</div>
+</div>
+
+
+<div class="leaflet-sidebar-pane" id="profile">
+                <h1 class="leaflet-sidebar-header">Crediti<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+			<ul>    
+
+                                <li><strong>Istituto Comprensivo Frank Carradori</strong><br> 2° A della secondaria di 1° grado, Via Donati 19, 51100 Pistoia</li>
+				<li><strong>Simone Vergari</strong><br>Museo Naturalistico e Archeologico dell’Appennino Pistoiese, Palazzo Achilli, Piazzetta Achilli 7, I-51028 Gavinana (Pistoia)
+</li>
+				<li><strong>Daniele Vergari </strong><br>Associazione G. B. Landeschi, San Miniato (Pisa)</li>
+                                <li><strong>Alfonso Crisci </strong><br>Istituto di Biometeorologia, CNR, Firenze</li>
+                                <li><strong>Andrea Cappugi </strong>Software developer</li>
+                                <li><strong>Nick Peihl </strong>Software developer <a href="http://www.npeihl.com/leaflet-sidebar-v2/">Leflet Sidebar v2 Code </a></li>
+
+			
+            </ul>
+              </div>
+
+            <div class="leaflet-sidebar-pane" id="messages">
+                <h1 class="leaflet-sidebar-header">Contatti<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+
+			<ul>
+                                 <li><strong>Simone Vergari</strong></li>
+                                 <li><strong>Telefono: </strong>+393476157961</li>
+				 <li><strong>Mail: </strong>sim.vergari@gmail.com</li>
+				 <li><strong>Indirizzo: </strong>Piazzetta Achilli 7, I-51028 Gavinana</li>
+			</ul>
+            </div>
+        </div>
+    </div>
+
+ <div id="map"></div>
+<script>
+
+var map;
+ 
+
+var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+	attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+});
+
+
+
+
+
+var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+
+
+var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'});
+
+var baseLayers = {
+		"OpenStreetMap": OpenStreetMap_Mapnik,
+		"Esri.World": Esri_WorldImagery,
+           	"OpenTopoMap": OpenTopoMap   
+
+	};
+
+map = L.map('map', {
+		center: [44.11864,10.64800],
+		zoom: 14,
+		layers: [OpenStreetMap_Mapnik]
+	});
+  
+	
+var forestIcon = L.icon({
+		iconUrl: 'images/img_forest.png',
+		iconSize: [32, 37],
+		iconAnchor: [16, 37],
+		popupAnchor: [0, -28]
+	});
+
+var m_sito_1=L.marker([44.12591,10.66454], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/1_par.html"><strong>Sito 1</strong><a>');
+var m_sito_2=L.marker([44.12468,10.66204], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/2_par.html"><strong>Sito 2</strong><a>');
+var m_sito_3=L.marker([44.12396,10.66025], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/3_par.html"><strong>Sito 3</strong><a>');
+var m_sito_4=L.marker([44.12286,10.65779], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/4_par.html"><strong>Sito 4</strong><a>');
+var m_sito_5=L.marker([44.12235,10.65705], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/5_par.html"><strong>Sito 5</strong><a>');
+var m_sito_6=L.marker([44.12133,10.65565], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/6_par.html"><strong>Sito 6</strong><a>');
+var m_sito_7=L.marker([44.12064,10.65421], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/7_par.html"><strong>Sito 7</strong><a>');
+var m_sito_8=L.marker([44.12014,10.65152], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/8_par.html"><strong>Sito 8</strong><a>');
+var m_sito_9=L.marker([44.11870,10.64826], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/9_par.html"><strong>Sito 9</strong><a>');
+var m_sito_10=L.marker([44.11864,10.64800], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/10_par.html"><strong>Sito 10</strong><a>');
+var m_sito_11=L.marker([44.11912,10.64730], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/11_par.html"><strong>Sito 11</strong><a>');
+var m_sito_12=L.marker([44.11769,10.64499], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/12_par.html"><strong>Sito 12</strong><a>');
+var m_sito_13=L.marker([44.11691,10.64237], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/13_par.html"><strong>Sito 13</strong><a>');
+var m_sito_14=L.marker([44.11375,10.64044], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/14_par.html"><strong>Sito 14</strong><a>');;
+var m_sito_15=L.marker([44.11377,10.63779], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/15_par.html"><strong>Sito 15</strong><a>');
+var m_sito_16=L.marker([44.11512,10.63664], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/16_par.html"><strong>Sito 16</strong><a>');
+var m_sito_17=L.marker([44.11515,10.63643], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/17_par.html"><strong>Sito 17</strong><a>');
+var m_sito_18=L.marker([44.11358,10.63770], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/18_par.html"><strong>Sito 18</strong><a>');
+var m_sito_19=L.marker([44.11216,10.63889], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/19_par.html"><strong>Sito 19</strong><a>');
+var m_sito_20=L.marker([44.11208,10.64718], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/20_par.html"><strong>Sito 20</strong><a>');
+var m_sito_21=L.marker([44.11209,10.64791], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/21_par.html"><strong>Sito 21</strong><a>');
+var m_sito_22=L.marker([44.11337,10.64965], {icon: forestIcon}).addTo(map).bindPopup('<a href="html/22_par.html"><strong>Sito 22</strong><a>');
+
+
+function basement(feature, layer) {
+  layer.bindPopup("Percorso Lagonegro Sestaione")
+}
+
+var percorso = new L.geoJson(percorso_sestaione, {
+  style: {
+    weight: 4,
+    color: "red",
+    opacity: 1,
+    fillColor: "red",
+    fillOpacity: 0.5
+  },
+  onEachFeature: basement
+}).addTo(map);
+        var sidebar = L.control.sidebar({ container: 'sidebar' , position: 'right'})
+            .addTo(map)
+            .open('home');
+
+
+
+var overlays = {
+		"Percorso": percorso
+	};
+
+L.control.layers(baseLayers, overlays).addTo(map);
+
+
+</script>
+</body>
+</html>
