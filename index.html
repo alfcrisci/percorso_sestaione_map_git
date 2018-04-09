@@ -15,7 +15,18 @@
   crossorigin=""></script>
   <script src="js/leaflet-sidebar.js"></script>
  <script type="text/javascript" src="js/percorso_sestaione.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"/>
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+    <![endif]-->
 
+     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <style>
         body {
             padding: 0;
@@ -95,7 +106,7 @@ p {
                 <!--<li><a onclick="alert('Progetto Lago Nero e Alta Valle sestaione')"><i class="fa fa-info"></i></a></li><!>-->
             </ul>
           <ul role="tablist">
-                <li><a href="https://github.com/alfcrisci/percorso_sestaione_map_git"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.com/alfcrisci/sestaione_project"><i class="fa fa-github"></i></a></li>
             </ul>
         </div>
 
@@ -157,12 +168,16 @@ p {
 			<ul>    
 
                                 <li><strong>Istituto Comprensivo Frank Carradori</strong><br> 2° A della secondaria di 1° grado, Via Donati 19, 51100 Pistoia</li>
+                                <li><strong>Eleonora Trapani</strong><br> Insengnante di lettere</li>
+                                <li><strong>Piera Papini</strong><br> Insengnante di scienze</li>
+                                <li><strong>Daniele Donatini</strong><br> Insengnante di francese</li>
+                                <li><strong>Beatrice Fiorineschi</strong><br> Insengnante di inglese</li>
 				<li><strong>Simone Vergari</strong><br>Museo Naturalistico e Archeologico dell’Appennino Pistoiese, Palazzo Achilli, Piazzetta Achilli 7, I-51028 Gavinana (Pistoia)
 </li>
-				<li><strong>Daniele Vergari </strong><br>Associazione G. B. Landeschi, San Miniato (Pisa)</li>
+				<li><strong>Daniele Vergari </strong><br>Associazione G. B. Landeschi, San Miniato,Pisa</li>
                                 <li><strong>Alfonso Crisci </strong><br>Istituto di Biometeorologia, CNR, Firenze</li>
-                                <li><strong>Andrea Cappugi </strong>Software developer</li>
-                                <li><strong>Nick Peihl </strong>Software developer <a href="http://www.npeihl.com/leaflet-sidebar-v2/">Leflet Sidebar v2 Code </a></li>
+                                <li><strong>Andrea Cappugi </strong><br>Software developer</li>
+                                <li><strong>Nick Peihl </strong><br>Software developer of <a href="http://www.npeihl.com/leaflet-sidebar-v2/">Leflet Sidebar v2 Code </a></li>
 
 			
             </ul>
@@ -213,7 +228,7 @@ var baseLayers = {
 	};
 
 map = L.map('map', {
-		center: [44.11864,10.64800],
+		center: [44.11864,10.66],
 		zoom: 14,
 		layers: [OpenStreetMap_Mapnik]
 	});
